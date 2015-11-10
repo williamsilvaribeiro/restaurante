@@ -64,17 +64,17 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
+	'hostname' => 'mysql:host=localhost;dbname=test;',
+	'username' => 'root',
 	'password' => '',
-	'database' => '',
-	'dbdriver' => 'mysqli',
+	'database' => 'test',
+	'dbdriver' => 'pdo',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => TRUE,
 	'cache_on' => FALSE,
 	'cachedir' => '',
-	'char_set' => 'utf8',
+	'char_set' => '',
 	'dbcollat' => 'utf8_general_ci',
 	'swap_pre' => '',
 	'encrypt' => FALSE,
@@ -83,3 +83,4 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
